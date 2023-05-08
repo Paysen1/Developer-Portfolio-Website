@@ -1,0 +1,257 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: white;
+}
+
+.header {
+  padding: 20px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: darkslategray;
+  color: #ffffff;
+}
+
+.header h1 {
+  display: inline-block;
+  font-size: 50px;
+  background-color: lightblue;
+  color: darkslategray;
+}
+
+
+
+.header nav {
+  padding-top: 15px;
+  margin-right: 20px;
+  float: right;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+  text-underline-position: under; 
+}
+
+.header nav ul {
+  list-style-type: none;
+}
+
+.header nav ul a{
+  display: inline-block;
+  margin-left: 25px;
+  text-decoration: underline;
+}
+
+.header a:hover{
+background-color: white;
+color: black;
+
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+p {
+  font-size: 16px;
+}
+
+.img {
+  height: 500px;
+  width: 100%;
+  margin-bottom: 25px;
+  background-image: url(./IMG_5518.PNG);
+  background-size: cover;
+  background-position: center;
+}
+
+.img ul{
+  margin-top: 400px;
+  margin-left: 1350px;
+  font-size: 75px;
+  display: inline-block;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: lightblue;
+  color: darkslategray;
+
+}
+
+.About{
+  display: flex;
+height: 200px;
+
+
+
+}
+.About h2{
+  font-size: 75px;
+  color:#2589bd;
+  text-decoration: underline;
+  text-underline-position: right;
+  padding-left: 300px;
+  
+  
+  
+  
+
+}
+
+.About p{
+ padding-left: 400px;
+ font-size: 20px;
+ 
+  
+}
+
+.line {
+border-color: #0072bb;
+
+}
+
+.work{
+  display: flex;
+  font-size: 75px;
+  color:#2589bd;
+  text-decoration: underline;
+  text-underline-position: right;
+  padding-left: 300px;
+  border-right-style:double;
+
+
+}
+
+.float-left {
+  float: left;
+  margin-right: 25px;
+}
+
+.float-right {
+  float: right;
+  margin-left: 25px;
+}
+
+.content {
+  width: 70%;
+  display: inline-block;
+  margin-left: 550px;
+  flex-wrap: wrap;
+}
+
+
+.Surf {
+  margin-bottom: 20px;
+  padding: 50px;
+  height: 300px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: #0072bb;
+  color: #ffffff;
+}
+
+.LEDWall {
+  margin-bottom: 20px;
+  padding: 50px;
+  height: 300px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: hsl(203, 100%, 37%);
+  color: #ffffff;
+}
+
+.Calculator {
+  margin-bottom: 20px;
+  padding: 50px;
+  height: 300px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: #0072bb;
+  color: #ffffff;
+}
+
+.Pastel {
+  margin-bottom: 20px;
+  padding: 50px;
+  height: 300px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: #0072bb;
+  color: #ffffff;
+}
+
+.Run {
+  margin-bottom: 20px;
+  padding: 50px;
+  height: 300px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: #0072bb;
+  color: #ffffff;
+}
+
+.Surf h2 {
+  margin-bottom: 20px;
+  font-size: 36px;
+}
+
+.LEDWall h2 {
+  margin-bottom: 20px;
+  font-size: 36px;
+}
+
+.Calculator h2 {
+  margin-bottom: 20px;
+  font-size: 36px;
+}
+
+.Pastel h2 {
+  margin-bottom: 20px;
+  font-size: 36px;
+}
+
+.Run h2 {
+  margin-bottom: 20px;
+  font-size: 36px;
+}
+
+footer {
+  display: flex;
+  justify-content:space-evenly ;
+  padding: 1%;
+  background-color: white;
+  color: black;
+}
+
+footer h4{
+  font-size: 50px;
+  color:#2589bd;
+  margin-right: 30px;
+}
+.footline{
+
+  border-color: #0072bb;
+}
+
+footer ul{
+  
+  display: flex;
+  min-width: 30px;
+}
+
+footer a{
+  background-color: unset;
+  color:#0072bb;
+  font-weight: bold;
+  text-decoration: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-left: 25px;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+  }
+
+  main {
+    max-width: 1200px;
+  }
+}
