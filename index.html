@@ -8,24 +8,21 @@
     <title>Portfolio</title>
 </head>
 <body>
-    <section>
-        <header class="header">
-            <h1>Paysen G Lund</h1>
-            <nav>
-              <ul>
-                <a href="#">About Me</a>
-                <a href="#">Work</a>
-                <a href="#">Contact Me</a>
-                <a href="#">Resume</a>
-              </ul>
-            </nav>
-        </header>
-<main>
-        <div class="img">
-          <ul>This is me</ul>
-        </div>
-    <section class="About">
-      <h2>About Me</h2>
+    <header class="header">
+        <h1>Paysen G Lund</h1>
+        <nav>
+            <a href="#about-me">About Me</a>
+            <a href="#work">Work</a>
+            <a href="#contact-me">Contact Me</a>
+            <a href="#resume">Resume</a>
+        </nav>
+    </header>
+    <main>
+        <figure class="img">
+          <h2>This is me</h2>
+        </figure>
+    <section id="about-me" class="content">
+      <h3>About Me</h3>
       <hr class="line" />
       <p> Hello, my name is Paysen Gage Lund. I was born in and raised in North Branch, Minnesota along with one sister.
         I am currently 20 years old and enjoy almost all aspects of technology. I have always had a knack for anything with a screen,
@@ -34,43 +31,35 @@
       </p>
 
     </section>
-    <section class="work">
+    <section id="work" class="content">
       <h3>Work</h3>
-          <div class="Surf">
+          <section class="boxes">
             <h2>Surf Report</h2>
-            <p>
                 MERN Stack
-            </p>
-        </div>
-          <div class="LEDWall">
-            <h2>LED Wall</h2>
-            <p>
+          </section>
+          <section class="boxes">
+            <h4>LED Wall</h4>
                 NODE/IoT
-            </p>
-        </div>
-            <div class="Calculator">
-                <h2>Calculator</h2>
-                <p>
-                   React/JavaScript/CSS
-                </p>
-            </div>
-            <div  class="Pastel">
-                <h2>Pastel Puzzels</h2>
-                <p>
-                   Mern Stack
-                </p>
-            </div>
-            <div class="Run">
-                <h2>Run Buddy</h2>
-                <p>
-                    HTML/CSS
-                </p>
-            </div>
+          </section>
+          <section class="boxes">
+              <h4>Calculator</h4>
+                  React/JavaScript/CSS
+          </section>
+          <section  class="boxes">
+              <h4>Pastel Puzzels</h4>
+                  Mern Stack
+          </section>
+          <section class="boxes">
+              <h4>Run Buddy</h4>
+                  HTML/CSS
+          </section>
+      </section>
+      <section id="contact-me" class="content">
+          <h3>Contact Me</h3>
       </section>
 </main>
         <footer>
-          <h4>Contact Me</h4>
-          <hr class="footline" />
+          <hr id="footline" />
             <nav>
                 <ul>
                     <a href="#">612-867-2484</a>
