@@ -8,6 +8,11 @@ body {
   background-color: white;
 }
 
+main {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-evenly;
+}
 .header {
   padding: 20px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -88,7 +93,6 @@ height: 200px;
 .About h2{
   font-size: 75px;
   color:#2589bd;
-  text-decoration: underline;
   text-underline-position: right;
   padding-left: 300px;
   
@@ -109,30 +113,26 @@ height: 200px;
 border-color: #0072bb;
 
 }
-
 .work{
+  display: flex;
+  height: 500px;
+  flex-wrap: wrap;
+
+
+}
+
+
+.work h3{
   display: flex;
   font-size: 75px;
   color:#2589bd;
-  text-decoration: underline;
-  text-underline-position: right;
   padding-left: 300px;
-  border-right-style:double;
+text-underline-position: right;
 
-
-}
-
-.float-left {
-  float: left;
-  margin-right: 25px;
-}
-
-.float-right {
-  float: right;
-  margin-left: 25px;
 }
 
 .content {
+  display: flex;
   width: 70%;
   display: inline-block;
   margin-left: 550px;
@@ -144,14 +144,17 @@ border-color: #0072bb;
   margin-bottom: 20px;
   padding: 50px;
   height: 300px;
+  width: 300px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   background-color: #0072bb;
   color: #ffffff;
+  flex-grow: 1;
 }
 
 .LEDWall {
   margin-bottom: 20px;
   padding: 50px;
+  width: 300px;
   height: 300px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   background-color: hsl(203, 100%, 37%);
@@ -159,8 +162,8 @@ border-color: #0072bb;
 }
 
 .Calculator {
-  margin-bottom: 20px;
   padding: 50px;
+  width: 300px;
   height: 300px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   background-color: #0072bb;
@@ -170,6 +173,7 @@ border-color: #0072bb;
 .Pastel {
   margin-bottom: 20px;
   padding: 50px;
+  width: 300px;
   height: 300px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   background-color: #0072bb;
@@ -179,6 +183,7 @@ border-color: #0072bb;
 .Run {
   margin-bottom: 20px;
   padding: 50px;
+  width: 300px;
   height: 300px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   background-color: #0072bb;
@@ -250,7 +255,9 @@ footer a{
   header {
     flex-direction: column;
   }
-
+  work {
+    flex-direction: column;
+  }
   main {
     max-width: 1200px;
   }
