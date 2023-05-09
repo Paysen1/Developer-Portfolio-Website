@@ -1,0 +1,148 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-size: 1vw;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+
+header {
+  display: inherit;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: darkslategray;
+  color: #ffffff;
+  flex-direction: column;
+}
+
+header section{
+  display: inherit;
+  justify-content: space-between;
+  align-items: flex-end;
+
+}
+
+h1 {
+  font-size: 3rem;
+  background-color: lightblue;
+  color: darkslategray;
+}
+
+header nav {
+  margin-right: 20px;
+  text-underline-position: under; 
+  padding: 1vw;
+}
+
+header a{
+  margin-left: 25px;
+  font-size: 2rem;
+}
+
+header a:hover{
+background-color: white;
+color: black;
+}
+
+figure {
+  display: flex;
+  height: 40vw;
+  background-image: url(../images/IMG_5518.PNG);
+  background-size: cover;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  padding: 5vw;
+  }
+
+.content{
+  display: inherit;
+}
+
+#cards {
+  display: inherit;
+  flex-wrap: wrap;
+}
+
+p {
+  font-size: 1.5vw;
+}
+
+h2{
+  font-size: 2.5rem;
+  color:#2589bd;
+
+}
+
+.work{
+  display: flex;
+  flex-wrap: wrap;
+ 
+}
+
+.section-header{
+  width: 10vw;
+}
+
+h3{
+  font-size: 2rem;
+  color:#2589bd;
+  border-right: 5px solid darkblue;
+  border-spacing: 1vw;
+}
+
+.boxes {
+  height: 30vw;
+  width: 30vw;
+  background-color: #0072bb;
+  color: #ffffff;
+  margin: 1vw;
+  flex-basis: calc(50% - 2vw);
+  font-size: 1.25rem;
+  display: inherit;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 5vw;
+  
+}
+
+.boxes:first-child{
+  flex-basis: 100%;
+}
+
+h4 {
+  font-size: 1.75rem;
+}
+
+#contact-me{
+  flex: inherit;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+#social a{
+  color:#0072bb;
+  font-weight: bold;
+  text-decoration: none;
+  margin-left: 7vw;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+  }
+  
+  main {
+    max-width: 1200px;
+  }
+}
