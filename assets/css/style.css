@@ -42,6 +42,7 @@ header nav {
 header a{
   margin-left: 25px;
   font-size: 2rem;
+  color: #ffffff;
 }
 
 header a:hover{
@@ -66,6 +67,7 @@ main {
 
 .content{
   display: inherit;
+  padding-top: 1vw;
 }
 
 #cards {
@@ -78,8 +80,9 @@ p {
 }
 
 h2{
+  background-color: lightblue;
   font-size: 2.5rem;
-  color:#2589bd;
+  color:darkslategray;
 
 }
 
@@ -94,18 +97,19 @@ h2{
 }
 
 h3{
-  font-size: 2rem;
+  font-size: 3rem;
   color:#2589bd;
-  border-right: 5px solid darkblue;
   border-spacing: 1vw;
+  padding-right: 5rem;
 }
 
 .boxes {
   height: 30vw;
   width: 30vw;
-  background-color: #0072bb;
+  
   color: #ffffff;
   margin: 1vw;
+  background-image: url(../images/css-code-e1517469545230.jpeg) ;
   flex-basis: calc(50% - 2vw);
   font-size: 1.25rem;
   display: inherit;
@@ -113,36 +117,76 @@ h3{
   justify-content: flex-start;
   align-items: center;
   padding-top: 5vw;
-  
 }
 
 .boxes:first-child{
   flex-basis: 100%;
 }
 
+
 h4 {
   font-size: 1.75rem;
 }
 
 #contact-me{
-  flex: inherit;
-  flex-direction: row;
-  justify-content: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+ 
+}
+
+#social{
+flex: inherit;
+justify-content: center;
+
 }
 
 #social a{
+  font-size: 1.4vw;
   color:#0072bb;
   font-weight: bold;
   text-decoration: none;
-  margin-left: 7vw;
+  margin-left: 7rem;
+
+}
+
+#social a:hover{
+  background-color: lightblue;
+  color: black;
 }
 
 @media screen and (max-width: 768px) {
-  header {
+  * {
     flex-direction: column;
+    padding: 0.4rem;
   }
+
+.media1{
+  align-items: center;
+}
+
+  header{
+    display: inherit;
+    justify-content: flex-start;
+  }
+
+  h3{
+    align-items: center;
+    font-size: 6rem;
+  }
+
+  #contact-me{
+    align-items: flex-start;
+  }
+
+  .cards{
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .boxes{
+    flex-direction: row;
+  }
+
   
-  main {
-    max-width: 1200px;
-  }
+
 }
