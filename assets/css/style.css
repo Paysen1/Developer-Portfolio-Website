@@ -109,7 +109,6 @@ h3{
   
   color: #ffffff;
   margin: 1vw;
-  background-image: url(../images/css-code-e1517469545230.jpeg) ;
   flex-basis: calc(50% - 2vw);
   font-size: 1.25rem;
   display: inherit;
@@ -121,8 +120,24 @@ h3{
 
 .boxes:first-child{
   flex-basis: 100%;
+  background-image: url(../images/digital-code-number-abstract-background-087317214_prevstill.webp) ;
 }
 
+#LED{
+  background-image: url(../images/LED-Wall-Benefits-e1534462771127.png) ;
+}
+
+#React{
+  background-image: url(../images/css-code-e1517469545230.jpeg) ;
+}
+
+#Pastel{
+  background-image: url(../images/gradient-background-vector-spring-colors_53876-117271.avif) ;
+}
+
+#Run{
+  background-image: url(../images/abstract-sony-wallpaper-preview.jpg) ;
+}
 
 h4 {
   font-size: 1.75rem;
