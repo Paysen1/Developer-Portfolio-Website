@@ -194,3 +194,48 @@ justify-content: center;
   }
 
 }
+
+@media screen and (max-width: 468px) {
+  * {
+    flex-direction: column;
+    padding: 0.4rem;
+  }
+
+.media1{
+  align-items: center;
+}
+
+  header{
+    display: inherit;
+    justify-content: flex-start;
+  }
+ 
+  p{
+    font-size: 2rem;
+  }
+
+  h3{
+    align-items: center;
+    font-size: 6rem;
+  }
+
+  #cards{
+    display:inline;
+  }
+
+  .boxes{
+    height: 14rem;
+    width: 400px;
+  }
+
+  #contact-me{
+    align-items: flex-start;
+  }
+
+  #social a{
+    font-size: 2rem;
+    margin-left: 5rem;
+    flex-direction: column;
+  }
+
+}
